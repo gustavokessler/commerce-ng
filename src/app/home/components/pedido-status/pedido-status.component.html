@@ -1,0 +1,24 @@
+<div class="container">
+    <section class="mat-typography">
+        <div *ngIf="status">
+            <h3 style="font-weight: 600; margin-bottom: 0;">Pedido: 123412</h3>
+            <h4>Status:
+                <span *ngIf="status == 'pendente'" style="color: orange">Aguardando confirmação.</span>
+                <span *ngIf="status == 'producao'" style="color: blue">Em produção.</span>
+                <span *ngIf="status == 'saiu'" style="color: green">Saiu para entrega.</span>
+            </h4>
+            <p>Xis Carne, Xis Calabresa, Regrigerante, Xis Carne, Xis Calabresa,
+                Regrigerante, Xis Carne, Xis Calabresa, Regrigerante</p>
+            <!-- TODO: criar um pipe para endereço -->
+            <p>Endereço: Rua Manoel Diomar Fernandes, 307, apt 207</p>
+            <p>Pagamento: Dinheiro.</p>
+            <h4 style="font-weight: 600; margin-bottom: 0;">Total: R$ 50,00</h4>
+        </div>
+
+        <div *ngIf="!status">
+            <h3 style="font-weight: 600; margin-bottom: 0;">Você não possui pedidos</h3>
+            <h4>Faça agora seu pedido.</h4>
+            <button mat-raised-button color='primary'>Pedir</button>
+        </div>
+    </section>
+</div>
