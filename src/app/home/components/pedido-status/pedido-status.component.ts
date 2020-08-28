@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PedidoStatusComponent implements OnInit {
 
-  status: string = 'saiu';
+  status: string;
 
   constructor() { }
 

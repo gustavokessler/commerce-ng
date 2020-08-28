@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
+
+  @Input() sidenav: MatSidenav;
+
 
   constructor() { }
 

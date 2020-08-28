@@ -11,9 +11,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ViewItemComponent } from './view-item/view-item.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [CardapioComponent],
+  declarations: [CardapioComponent, ViewItemComponent],
   imports: [
     CommonModule,
     CardapioRoutingModule,
@@ -24,6 +26,6 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatCardModule,
     FlexLayoutModule,
     MatDialogModule,
-  ]
+    MatIconModule,  ]
 })
 export class CardapioModule { }

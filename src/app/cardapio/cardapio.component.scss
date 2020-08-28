@@ -1,3 +1,64 @@
+.container{
+    padding: 12px;
+    position: relative;
+    color: white;
+    background: rgba($color: #000000, $alpha: 0.4);
+}
+
+.container::after{
+    content: "";
+    background-image: url("https://img.stpu.com.br/?img=https://s3.amazonaws.com/pu-mgr/default/a0RG000000aMxqMMAS/54d509bce4b015fb256cbcd7.jpg&w=710&h=462");
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-text{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+    // color: rgba(0, 0, 0, 0.67);
+}
+
+.menu{
+    // background: red;
+    margin: 12px -12px -12px -12px;
+    white-space: nowrap;
+    padding: 0 12px 0 12px;
+}
+
+ul{
+    width: 100%;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+li{
+    position:relative;
+    padding: 12px 12px 3px 12px;
+    // background: red;
+    display: inline-block;
+}
+
+.isSelected{
+    border-bottom: solid 3px yellow ;
+}
+
+li a{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
 .cardapio{
     padding: 12px;
 }
@@ -9,4 +70,9 @@
     -webkit-line-clamp: 2; /* number of lines to show */
     -webkit-box-orient: vertical;
     // text-align: justify;
+}
+
+.custom-dialog-container .mat-dialog-container {
+    /* add your styles */
+    padding: 0px;
 }

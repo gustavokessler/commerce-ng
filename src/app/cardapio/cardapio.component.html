@@ -1,15 +1,31 @@
-<mat-tab-group (selectedTabChange)="test($event)">
-    <mat-tab label="Xis"></mat-tab>
-    <mat-tab label="Second"></mat-tab>
-    <mat-tab label="Third"></mat-tab>
-    <mat-tab label="Third"></mat-tab>
-    <mat-tab label="Third"></mat-tab>
-    <mat-tab label="Third"></mat-tab>
-    <mat-tab label="Third"></mat-tab>
-    <mat-tab label="Third"></mat-tab>
-    <mat-tab label="Third"></mat-tab>
-    <mat-tab label="Third"></mat-tab>
-</mat-tab-group>
+<div fxLayout="column" class="container">
+    <div fxLayout="row" class="header" fxLayoutAlign="space-between">
+        <mat-icon style="font-size: 28px;" routerLink="/">keyboard_arrow_left</mat-icon>
+        <p class="header-text">Cardápio</p>
+        <div></div>
+    </div>
+    <div fxLayout="row" class="menu">
+        <ul>
+            <li *ngFor="let item of filterList" [ngClass]="{'isSelected': item === filter}" (click)="filterChange(item)">
+                <a>{{item}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- <div fxLayout="row">
+    <mat-tab-group fxFlex="100" (selectedTabChange)="test($event)">
+        <mat-tab label="Xis"></mat-tab>
+        <mat-tab label="Second"></mat-tab>
+        <mat-tab label="Third"></mat-tab>
+        <mat-tab label="Third"></mat-tab>
+        <mat-tab label="Third"></mat-tab>
+        <mat-tab label="Third"></mat-tab>
+        <mat-tab label="Third"></mat-tab>
+        <mat-tab label="Third"></mat-tab>
+        <mat-tab label="Third"></mat-tab>
+        <mat-tab label="Third"></mat-tab>
+    </mat-tab-group>
+</div> -->
 
 <div style="padding: 12px;">
     <p class="mat-h2">{{filter}}</p>
@@ -18,13 +34,16 @@
 
     <div fxLayout="row wrap" fxLayoutGap="12px grid">
         <div *ngFor="let item of [1,2,3,4,5]" fxFlex="50">
-            <mat-card>
+            <mat-card (click)="openDialog()">
                 <img mat-card-image src="https://img.cybercook.com.br/receitas/960/xis-de-frango-1-623x350.jpeg"
                     alt="Photo of a Shiba Inu">
                 <mat-card-content>
                     <p class="mat-body-strong">Xis Carne</p>
-                    <p class="mat-small faded-text">Pão, carne, aaa, milho, evervilha, calabresa, maionese, mostarda, ketchup.</p>
-                    <p class="mat-h2">R$ 10,00</p>
+                    <p class="mat-small faded-text">Pão, carne, aaa, milho, evervilha, calabresa, maionese, mostarda,
+                        ketchup.</p>
+                    <!-- <p class="mat-h2">R$ 10,00</p> -->
+                    <p class="mat-h4" style="text-decoration: line-through; color: red; margin-bottom: 0;">R$ 10,00</p>
+                    <p class="mat-h2">R$ 8,00</p>
                 </mat-card-content>
             </mat-card>
         </div>
