@@ -1,0 +1,58 @@
+<div fxLayout="column" class="container mat-elevation-z1">
+    <div fxLayout="row" class="header" fxLayoutAlign="space-between">
+        <mat-icon style="font-size: 28px;" routerLink="/">keyboard_arrow_left</mat-icon>
+        <p class="header-text">Carrinho</p>
+        <div></div>
+    </div>
+</div>
+
+<div fxLayout="column" fxLayoutGap="12px" class="itens-list">
+    <mat-card style="padding: 0" class="mat-elevation-z3" *ngFor="let item of [1,2,4,5,6,7,8,8,0]">
+        <div fxLayout="row" fxFlex="100">
+            <div class="img" fxFlex="30" fxLayout="row" fxLayoutAlign="center center">
+                <img src="https://freepikpsd.com/wp-content/uploads/2019/10/xis-png-3-Transparent-Images.png">
+            </div>
+            <div class="content" fxLayout="column" fxFlex="70">
+                <div class="header" fxLayout="column" fxFlex="100">
+                    <p class="mat-h3" style="font-weight: 600; margin-bottom: 0;">Xis Carne</p>
+                    <p class="mat-h4">Total: {{price * qntnumber |  currency:'BRL'}}</p>
+                </div>
+                <div class="action" fxLayout="row" fxFlex="100" fxLayoutAlign="end" style="padding:0 ;">
+                    <div class="qnt-selector" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1">
+                        <button mat-icon-button [disabled]="qntnumber <= 1" (click)="qntnumber = qntnumber - 1">
+                            <mat-icon>remove</mat-icon>
+                        </button>
+                        <p>{{qntnumber}}</p>
+                        <button mat-icon-button (click)="qntnumber = qntnumber +1">
+                            <mat-icon>add</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="remove" style="position: absolute; top: 0; right: 0;" >
+                <button mat-icon-button>
+                    <mat-icon>close</mat-icon>
+                </button>
+            </div>
+        </div>
+
+        <!-- <mat-card-actions align="end">
+            <div class="qnt-selector" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1">
+                <button mat-icon-button [disabled]="qntnumber <= 1" (click)="qntnumber = qntnumber - 1">
+                    <mat-icon>remove</mat-icon>
+                </button>
+                <p>{{qntnumber}}</p>
+                <button mat-icon-button (click)="qntnumber = qntnumber +1">
+                    <mat-icon>add</mat-icon>
+                </button>
+            </div>
+        </mat-card-actions> -->
+    </mat-card>
+
+</div>
+
+<div fxLayout="row" class="footer mat-elevation-z6" fxLayoutAlign="space-between center">
+    <p class="mat-h3" style="font-weight: 500; margin-top: 0px; margin-bottom: 0;">Total: {{ 54.45 | currency:'BRL'}}</p>
+
+    <button mat-raised-button color="primary">Finalizar</button>
+</div>

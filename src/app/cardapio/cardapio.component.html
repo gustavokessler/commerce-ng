@@ -12,25 +12,10 @@
         </ul>
     </div>
 </div>
-<!-- <div fxLayout="row">
-    <mat-tab-group fxFlex="100" (selectedTabChange)="test($event)">
-        <mat-tab label="Xis"></mat-tab>
-        <mat-tab label="Second"></mat-tab>
-        <mat-tab label="Third"></mat-tab>
-        <mat-tab label="Third"></mat-tab>
-        <mat-tab label="Third"></mat-tab>
-        <mat-tab label="Third"></mat-tab>
-        <mat-tab label="Third"></mat-tab>
-        <mat-tab label="Third"></mat-tab>
-        <mat-tab label="Third"></mat-tab>
-        <mat-tab label="Third"></mat-tab>
-    </mat-tab-group>
-</div> -->
 
 <div style="padding: 12px;">
     <p class="mat-h2">{{filter}}</p>
 
-    <!-- TODO FAZER ESSA APRESENTAÇÃO COM O FLEX LAYOUT -->
 
     <div fxLayout="row wrap" fxLayoutGap="12px grid">
         <div *ngFor="let item of [1,2,3,4,5]" fxFlex="50">

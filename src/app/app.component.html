@@ -5,12 +5,8 @@
 
   <mat-sidenav #sidenav [mode]="media.isActive('xs') || media.isActive('sm')  ? 'over' : 'side'"
     [opened]="!media.isActive('xs') && !media.isActive('sm')">
-    <!-- <mat-divider *ngIf="!media.isActive('xs') && !media.isActive('sm')"></mat-divider> -->
-
-    <a>
-      <mat-icon *ngIf="sidenav.opened">chevron_left</mat-icon>
-      <span class="mat-body">Esconder menu</span>
-    </a>
+    
+    <app-side-nav></app-side-nav>
 
   </mat-sidenav>
   <mat-sidenav-content>

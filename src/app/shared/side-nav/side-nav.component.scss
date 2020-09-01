@@ -1,0 +1,30 @@
+.container{
+    width: 250px;
+    // height: 100vh;
+    // position: fixed;
+    // background:white;
+}
+
+.header{
+    padding: 12px;
+}
+
+.user-img{
+    height: 100px;
+    width : 100px;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.user-img > img{
+    width: 100%;
+}
+
+.faded-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    // text-align: justify;
+}
