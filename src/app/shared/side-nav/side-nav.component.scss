@@ -7,7 +7,26 @@
 
 .header{
     padding: 12px;
+    position: relative;
+    color: white;
+    // background: rgba($color: #000000, $alpha: 0.4);
+    background: rgb(13,5,145);
+background: linear-gradient(180deg, rgba(13,5,145,1) 0%, rgba(63,81,181,1) 80%, rgba(6,152,181,1) 100%);
 }
+
+// .header::after{
+//     content: "";
+//     background-image: url("https://img.stpu.com.br/?img=https://s3.amazonaws.com/pu-mgr/default/a0RG000000aMxqMMAS/54d509bce4b015fb256cbcd7.jpg&w=710&h=462");
+//     background-size: cover;
+//     background-position: center;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     position: absolute;
+//     z-index: -1;
+// }
+
 
 .user-img{
     height: 100px;
@@ -27,4 +46,12 @@
     -webkit-line-clamp: 1; /* number of lines to show */
     -webkit-box-orient: vertical;
     // text-align: justify;
+}
+
+mat-action-list{
+    margin-top: -8px;
+}
+
+.login{
+    padding: 12px
 }
