@@ -5,12 +5,15 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { LoginComponent } from './login/login.component';
 
+import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
+
 
 @NgModule({
   declarations: [LoginComponent, SignInComponent],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    NgxAuthFirebaseUIModule,
   ]
 })
 export class AuthModule { }

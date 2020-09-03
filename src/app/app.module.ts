@@ -10,12 +10,18 @@ import { PedidoStatusComponent } from './home/components/pedido-status/pedido-st
 import { MatButtonModule } from '@angular/material/button';
 import { PromocoesComponent } from './home/components/promocoes/promocoes.component';
 import { MatCardModule } from '@angular/material/card';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {MatIconModule} from '@angular/material/icon';
-import {MatListModule} from '@angular/material/list';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
+import { environment } from "../environments/environment";
+
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireDatabaseModule } from "@angular/fire/database";
+
+import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
 
 @NgModule({
   declarations: [
@@ -36,6 +42,9 @@ import {MatListModule} from '@angular/material/list';
     MatExpansionModule,
     MatIconModule,
     MatListModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    NgxAuthFirebaseUIModule.forRoot(environment.firebase),
   ],
   providers: [],
   bootstrap: [AppComponent]

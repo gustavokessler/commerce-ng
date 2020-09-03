@@ -1,1 +1,7 @@
-<p>login works!</p>
+<div class="container">
+    <ngx-auth-firebaseui-login [resetPasswordEnabled]="false" [titleText]="'Faça Login'" [providers]="['google']"
+        [loginButtonText]="'Entrar'" [emailErrorRequiredText]="'Email obrigatório'" [passwordText]="'Senha'"
+        [passwordErrorRequiredText]="'Senha obrigatória'" [orLabelText]="'OU'"
+        [dontHaveAnAccountText]="'Ainda não tem uma conta?'" [createAccountButtonText]="'Criar uma Conta'">
+    </ngx-auth-firebaseui-login>
+</div>
