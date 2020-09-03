@@ -1,1 +1,47 @@
-<p>sign-in works!</p>
+<div class="container">
+    <ngx-auth-firebaseui-register [titleText]="'Crie sua Conta'" [nameText]="'Nome'"
+        [nameErrorRequiredText]="'Nome obrigatório'" [emailErrorRequiredText]="'Email obrigatório'"
+        [passwordText]="'Senha'" [passwordErrorRequiredText]="'Senha obrigatória'"
+        [passwordConfirmationText]="'Confirmar Senha'" [passwordConfirmationErrorRequiredText]="'Senha obrigatória'"
+        [passwordErrorMatchText]="'Senhas precisam serem iguais'" [createAccountButtonText]="'CRIAR SUA CONTA'" [alreadyHaveAccountText]="'Já tem uma conta?'" [loginButtonText]="'Entrar'">
+    </ngx-auth-firebaseui-register>
+
+    <!-- <div fxLayout="column" fxLayoutAlign="" fxLayoutGap="24px" class="login">
+        <p class="mat-h2 bold-500 text-center">Crie sua conta</p>
+
+        <div class="form" fxLayout="column">
+            <mat-form-field fxFlex="100" appearance="legacy">
+                <mat-label>nome</mat-label>
+                <input matInput placeholder="seuemail@gmail.com" type="email" required>
+                <mat-icon matSuffix color="primary">person</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field fxFlex="100" appearance="legacy">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="seuemail@gmail.com" type="email" required>
+                <mat-icon matSuffix color="primary">email</mat-icon>
+            </mat-form-field>
+            
+            <mat-form-field appearance="legacy">
+                <mat-label>Senha</mat-label>
+                <input matInput type="password" required>
+                <mat-icon matSuffix color="primary">lock</mat-icon>
+            </mat-form-field>
+        </div>
+            
+        <button mat-raised-button color="primary">Entrar</button>
+
+        <p class="mat-h3 bold-600 text-center or"> OU </p>
+
+        <div fxLayout="column" fxLayoutGap="12px" class="providers">
+            <button mat-raised-button class="google">Google</button>
+            <button mat-raised-button class="facebook">Facebook</button>
+        </div>
+
+        <div>
+            <p class="mat-h4 bold-500 text-center">Ainda não tem uma conta?</p>
+            <button mat-button color="primary" routerLink="cadastro">Criar uma conta</button>
+        </div>
+    </div> -->
+
+</div>

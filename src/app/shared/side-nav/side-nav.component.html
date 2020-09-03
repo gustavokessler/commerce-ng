@@ -41,7 +41,7 @@
 
         <mat-action-list style="position: fixed; bottom: 0; width: 250px;"> 
             <mat-divider></mat-divider>
-            <mat-list-item routerLink="/" style="color: red;">
+            <mat-list-item (click)="logout()" style="color: red;">
                 <mat-icon mat-list-icon>logout</mat-icon>
                 <div mat-line>Sair</div>
             </mat-list-item>

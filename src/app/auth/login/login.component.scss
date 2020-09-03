@@ -1,5 +1,30 @@
 .container{
-    height: calc(100vh - 56px);
-    width: 90%;
-    margin-left: 5%;
+    height: calc(100vh - 80px);
+    // margin-left: 5%;
+    padding: 12px;
+}
+
+.login{
+    padding: 12px;
+    font-size: 16px;
+}
+
+.providers{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.google{
+    background: #db4437;
+    color: white;
+}
+
+.facebook{
+    background: #385899;
+    color: white;
+}
+
+button{
+    width: 80%;
+    margin-left: 10%;
 }
