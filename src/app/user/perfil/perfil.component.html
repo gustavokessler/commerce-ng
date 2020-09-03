@@ -1,0 +1,47 @@
+<div class="container" fxLayout="column" fxLayoutGap="12px">
+    <div fxLayout="row" class="header" fxLayoutAlign="space-between">
+        <mat-icon style="font-size: 28px;" routerLink="/">keyboard_arrow_left</mat-icon>
+        <!-- <button mat-icon-button ><mat-icon>keyboard_arrow_left</mat-icon></button> -->
+        <p class="header-text">Perfil</p>
+        <div></div>
+    </div>
+
+    <div fxLayout="column" class="form">
+        <mat-form-field appearance="legacy">
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="João da Silva" value="Gustavo Kessler">
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Telefone</mat-label>
+            <input matInput placeholder="51992489578" type="number" value="51992534852">
+            <mat-icon matSuffix>phone</mat-icon>
+        </mat-form-field>
+
+
+        <div fxLayout="row" fxLayoutGap="12px">
+            <mat-form-field fxFlex="calc(60% - 6px)" appearance="legacy">
+                <mat-label>Rua</mat-label>
+                <input matInput placeholder="Oswaldo Aranha" value="Júlio de Castilho">
+                <mat-icon matSuffix>traffic</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field fxFlex="calc(40% - 6px)" appearance="legacy">
+                <mat-label>Número</mat-label>
+                <input matInput placeholder="2018" type="number" value="208">
+                <mat-icon matSuffix>home</mat-icon>
+            </mat-form-field>
+        </div>
+
+        <mat-form-field fxFlex="calc(60% - 6px)" appearance="legacy">
+            <mat-label>Complemento</mat-label>
+            <input matInput placeholder="Bloco 3, apt 405" value="Bloco 3, apt 405">
+            <mat-icon matSuffix>description</mat-icon>
+        </mat-form-field>
+    </div>
+
+    <!-- <div fxLayout="row" fxLayoutAlign="center"> -->
+        <button mat-raised-button color="primary">Salvar</button>
+    <!-- </div> -->
+</div>
